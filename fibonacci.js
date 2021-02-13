@@ -24,10 +24,5 @@ function fibonacci(n){
     }
 }
 
-function fibAdd(a){
-    var fibNum = fib.indexOf(a - 1) + fib.indexOf(a - 2);
 
-    console.log(fib);
-    return fibNum;
-}
 
