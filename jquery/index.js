@@ -3,10 +3,21 @@
 
 //$("h1").addClass("big-title");
 
-$("button").text("supBitches!!");
+$("button").click(function(){
+  $("h1").fadeOut();
+  $("h1").fadeIn();
+  $("h1").slideUp();
+  $("h1").slideDown();
+});
 
 $("a").attr("href", "https://www.yahoo.com");
 
 $("h1").click(function(){
-  alert("h1 clicked, n shit")
+  //alert("h1 clicked, n shit");
+  $("h1").text("April fools!");
+  $("a").text("yahoo");
+});
+
+$(document).keypress(function(event){
+  $("h1").text(event.key);
 });
